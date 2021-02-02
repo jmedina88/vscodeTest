@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .checked {
+          color: orange;
+        }
+        </style>
+    
+    <title>Document</title>
+</head>
+<body onload="">
+<nav>
+    <div class="left">
+        <h1>Logo</h1>
+    </div>
+    <div>
+        <ul >
+            <li><a href="default.html">Home</a></li>
+            <li><a href="news.asp">News</a></li>
+            <li><a href="contact.asp">Contact</a></li>
+            <li><a href="about.asp">About</a></li>
+        </ul>
+    </div>
+</nav>
+    <img src="octopus.jpg" alt="an octupos" id="icon01" />
+    <script src="script.js"></script>
+    <p id="sometext" >mudar estilo de texto</p>
+    <button id="myBtn01" onclick="mudarImg();">Mudar Img</button>
+    <button id="myBtn" onclick="changeText();">Click Me</button>
+    <br>
+<div class="card">
+    <img src="octopus.jpg" alt="" width="150px" height="auto">
+   <div class="stars" >
+    <span id="star1" onclick="myFunction();" class="fa fa-star "></span>
+    <span id="star3" onclick="myFunction();" class="fa fa-star "></span>
+    <span id="star4" onclick="myFunction();"class="fa fa-star"></span>
+    <span id="star5" onclick="myFunction();" class="fa fa-star"></span>
+    <span id="star2" onclick="myFunction();" class="fa fa-star "></span>
+   </div>  
+</div>
+
+<script>
+    function myFunction() {
+
+        let current = document.querySelector('.stars');
+        let children = current.children;
+
+        for (let index = 0; index < children.length; index++) {
+            const element = children[index];
+             //element.classList.toggle("checked");
+            
+        }
+        console.log(children);
+        //.classList.tog
+        //let current = document.querySelector('.stars');
+        //let prevSibling = currentNode.previousElem entSib  ling;
+      //var element = document.getElementById("star1");
+      
+      
+    }
+    </script>
+</body>
+</html>
